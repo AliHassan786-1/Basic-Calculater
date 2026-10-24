@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Calculator</title>
+</head>
+<body>
+
+    <script>
+        // 1. Take two numbers from the user using prompt()
+        // Note: prompt() returns a string, so Number() converts it into a number
+        var num1 = Number(prompt("Enter the first number:"));
+        var num2 = Number(prompt("Enter the second number:"));
+
+        // 2. Perform math operations
+        var addition = num1 + num2;
+        var subtraction = num1 - num2;
+        var multiplication = num1 * num2;
+        var division = num1 / num2;
+        var remainder = num1 % num2; // Modulus operator
+
+        // 3. Display the results using alert() or document.write()
+        var results = "=== Calculator Results ===\n" +
+                      "Numbers: " + num1 + " and " + num2 + "\n\n" +
+                      "Addition (+): " + addition + "\n" +
+                      "Subtraction (-): " + subtraction + "\n" +
+                      "Multiplication (*): " + multiplication + "\n" +
+                      "Division (/): " + division + "\n" +
+                      "Remainder (%): " + remainder;
+
+        alert(results);
+    </script>
+
+</body>
+</html>
